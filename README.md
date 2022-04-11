@@ -31,6 +31,7 @@ InputDefinition       : {class WorkflowBaseDataType {
 
 2. With table view (Sort based on CreateTime, in descending order).
 
+
 ```
 ICO > $wf.Results | Sort-Object CreateTime -Descending | Format-Table -Property Label,Moid,CreateTime
 
@@ -42,7 +43,8 @@ Test Powershell Inspector                          624ec3b8696f6e2d316b95a0 04/0
 Powershell - MS Services                           624cb5ef696f6e2d31643927 04/05/2022 21:34:39
 ```
 
-2. Get a specific Workflow Definition by Label (Native)
+3. Get a specific Workflow Definition by Label (Native)
+
 
 ```
 ICO > $wf = Get-IntersightWorkflowWorkflowDefinition -Label 'Deploy a Virtual Machine'       
@@ -62,7 +64,7 @@ InputDefinition       : {class WorkflowBaseDataType {
 [...]
 ```
 
-3. Get a specific Workflow Definition by Label (Query Filter)
+4. Get a specific Workflow Definition by Label (Query Filter)
 
 ```
 ICO > $filter="Label eq 'Deploy a Virtual Machine'"
@@ -81,7 +83,7 @@ InputDefinition       : {class WorkflowBaseDataType {
 [...]
 ```
 
-4. Get all Requests (except internals)
+5. Get all Requests (except internals)
 
 ```
 ICO > $requests = Get-IntersightWorkflowWorkflowInfo -InlineCount allpages -Top 0 -Filter "(Type ne 'ANSIBLE_MONITORING') and (Status ne 'TIMED_OUT') and (Status ne 'NotStarted') and (Internal ne true)"
@@ -116,7 +118,7 @@ Message                        : {class WorkflowMessage {
 [...]                                   
 ```
 
-5. Get Request by MOID
+6. Get Request by MOID
 
 ```
 ICO > $requests = Get-IntersightWorkflowWorkflowInfo -Moid 6252aa45696f6e2d31d8e8db                                                                                                                       
