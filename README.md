@@ -1,4 +1,20 @@
-## Examples
+# Intersight Cloud Orchestrator 
+## Powershell Examples
+
+This repository contains sample Powershell code for Intersight Cloud Orchestrator (ICO)<br>
+
+<b>DISCLAIMER: This is NOT an official Cisco repository and comes with NO WARRANTY AND/OR SUPPORT<br>
+Please check LICENSE-CISCO for additional details</b>
+ 
+### Instructions
+1. [Generate an API key and secret from Intersight](https://intersight.com/apidocs/introduction/security/%23generating-api-keys&sa=D&ust=1612024909729000&usg=AOvVaw362rkbFxqhX_Mo8w0xkDJG/#generating-api-keys)
+2. Take note of the `API Key ID`, download and store the `Secret Key` in your filesystem
+3. Refer to the `sample_configuration.ps1` file to understand how to use those credentials in your scripts
+5. Install Intersight Powershell SDK: `PS> Install-Module -Name Intersight.PowerShell`
+
+<hr>
+
+### Examples
 
 1.  Get all Workflows Definitions (as displayed in Intersight)
 
