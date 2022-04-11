@@ -119,7 +119,7 @@ PauseReason                    : None
 WaitReason                     : None
 WorkflowMetaType               : UserDefined
 CleanupTime                    : 01/01/0001 00:00:00
-Email                          : rtortori@cisco.com
+Email                          : user@cisco.com
 EndTime                        : 01/01/0001 00:00:00
 FailedWorkflowCleanupDuration  : 2160
 Input                          : {}
@@ -148,7 +148,7 @@ PauseReason                    : None
 WaitReason                     : None
 WorkflowMetaType               : UserDefined
 CleanupTime                    : 30/06/2022 17:35:08
-Email                          : rtortori@cisco.com
+Email                          : user@cisco.com
 EndTime                        : 01/04/2022 17:35:08
 FailedWorkflowCleanupDuration  : 2160
 Input                          : {Cluster, Datacenter, Datastore, Folder…}
